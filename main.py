@@ -13,13 +13,15 @@ guess = random.randint(1,10)
 # until a game is won or attempted guesses have exceeded after 5 tries rendering a false boolean value.
 
 # First Attempt: Condition works, however 1 input is looped over 5 times as matching guess.
-# The goal is to prompt players to pick another number within 5 attempts, if not guessed the matched number the
+# The goal is to prompt players to pick another number within 5 attempts, if not guessed the
 # first time.
 
-num_guess = int(input('Pick a number... '))
+
 attempted_guesses = 0
 
 while attempted_guesses < 5:
+   num_guess = int(input('Pick a number... '))
+
    if num_guess == guess:
     print('You\'ve guessed correctly!')
     attempted_guesses += 1
