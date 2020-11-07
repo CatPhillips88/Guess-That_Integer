@@ -21,6 +21,7 @@ while attempted_guesses < 5:
        print('YOU\'VE GUESSED CORRECTLY')
        attempted_guesses += 1
        print(f'CURRENT GUESS: {attempted_guesses}')
+       break
 
 if num_guess != guess and attempted_guesses == 5:
     print('\nBETTER LUCK NEXT TIME ON GUESS THAT INTEGER!')

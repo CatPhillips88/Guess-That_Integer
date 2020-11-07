@@ -19,8 +19,7 @@
 # if the number guess is greater than 10 and not equal to guess a warning will flag.
 
 # First Attempt: Condition works and prints error message, however also tests the hint condition leading to
-# 'GUESS AGAIN, GO LOWER' being printed.
+# 'GUESS AGAIN, GO LOWER' being printed. To mitigate this issue the code should be refactored using if/elif statements.
 
-# To mitigate this issue the code should be refactored using if/elif statements.
-
-
+# In the event, a player guesses the matched number instead of continue the game until the 5th attempt, a break statement
+# should end the game completely.
