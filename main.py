@@ -22,11 +22,11 @@ while attempted_guesses < 5:
        attempted_guesses += 1
        print(f'CURRENT GUESS: {attempted_guesses}')
    elif num_guess != guess and num_guess < guess:
-       print('GUESS AGAIN, GO HIGHER')
+       print('GUESS AGAIN, GO HIGHER!')
        attempted_guesses += 1
        print(f'CURRENT GUESS: {attempted_guesses}')
    elif num_guess == guess:
-       print('YOU\'VE GUESSED CORRECTLY')
+       print('YOU\'VE GUESSED CORRECTLY!')
        attempted_guesses += 1
        print(f'CURRENT GUESS: {attempted_guesses}')
        break
