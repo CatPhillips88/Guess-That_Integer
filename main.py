@@ -7,6 +7,8 @@ attempted_guesses = 0
 while attempted_guesses < 5:
    num_guess = int(input('Pick a number... '))
 
+   if num_guess > 10 and num_guess != guess:
+       print('SORRY, GUESS ONLY NUMBERS BETWEEN 1 AND 10!')
    if num_guess != guess and num_guess > guess:
        print('GUESS AGAIN, GO LOWER!')
        attempted_guesses += 1

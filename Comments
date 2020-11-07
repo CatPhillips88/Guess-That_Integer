@@ -13,3 +13,12 @@
 # first time.
 
 # Second Attempt: Input nested in the While loop, if statement now runs the guess conditions over 5 number guess attempts.
+
+# Despite the guess variable being set to select a random number between 1 and 10, when a player happens to select higher
+# than 10, the program effectively still runs. To find a solution to this, I've set a condition via
+# if the number guess is greater than 10 and not equal to guess a warning will flag.
+
+# First Attempt: Condition works and prints error message, however also tests the hint condition leading to
+# 'GUESS AGAIN, GO LOWER' being printed.
+
+# To mitigate this issue the code should be refactored using if/elif statements.
