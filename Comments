@@ -1,0 +1,31 @@
+# The variable 'num_guess' assigns an input which prompts players to enter an integer.
+# A conditional test via an if statement, tests whether the user input matches a random number generated in the variable
+# 'guess'.
+
+# If the condition is met via a true boolean value then a message prints to terminal, otherwise the user will be asked
+# pick another number.
+# The if statement is nested in a While loop to execute as long as the attempted guesses are less than 5. The default
+# attempts have been set to default number - 0. Upon each input, 1 point should be added to attempted guesses value
+# until a game is won or attempted guesses have exceeded after 5 tries rendering a false boolean value.
+
+# First Attempt: Condition works, however 1 input is looped over 5 times as matching guess.
+# The goal is to prompt players to pick another number within 5 attempts, if not guessed the
+# first time.
+
+# Second Attempt: Input nested in the While loop, if statement now runs the guess conditions over 5 number guess attempts.
+
+# Despite the guess variable being set to select a random number between 1 and 10, when a player happens to select higher
+# than 10, the program effectively still runs. To find a solution to this, I've set a condition via
+# if the number guess is greater than 10 and not equal to guess a warning will flag.
+
+# First Attempt: Condition works and prints error message, however also tests the hint condition leading to
+# 'GUESS AGAIN, GO LOWER' being printed. To mitigate this issue the code should be refactored using if/elif statements.
+
+# In the event, a player guesses the matched number instead of continue the game until the 5th attempt, a break statement
+# should end the game completely.
+
+# I want to give the player the option to quit the program at any time. Upon a specific integer input and equality
+# tested, a subsequent input prompt asks the player if they would like to exit game. If input value equates 'yes'
+# the loop will end via break statement. If input equates to 'no' then the original input will be reassigned and game continues.
+
+
