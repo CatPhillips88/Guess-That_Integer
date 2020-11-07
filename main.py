@@ -7,6 +7,14 @@ attempted_guesses = 0
 while attempted_guesses < 5:
    num_guess = int(input('\nPick a number... '))
 
+   if num_guess == 1001:
+       message = input('Would you like to exit game? ')
+       if message == 'yes':
+           print('\nSORRY TO SEE YOU LEAVE! SEE YOU NEXT TIME ON GUESS THAT INTEGER!')
+           break
+       elif message == 'no':
+           num_guess = int(input('Please continue to pick a number... '))
+
    if num_guess > 10 and num_guess != guess:
        print('SORRY, GUESS ONLY NUMBERS BETWEEN 1 AND 10!')
    elif num_guess != guess and num_guess > guess:

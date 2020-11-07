@@ -23,3 +23,9 @@
 
 # In the event, a player guesses the matched number instead of continue the game until the 5th attempt, a break statement
 # should end the game completely.
+
+# I want to give the player the option to quit the program at any time. Upon a specific integer input and equality
+# tested, a subsequent input prompt asks the player if they would like to exit game. If input value equates 'yes'
+# the loop will end via break statement. If input equates to 'no' then the original input will be reassigned and game continues.
+
+
